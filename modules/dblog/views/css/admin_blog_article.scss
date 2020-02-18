@@ -1,0 +1,111 @@
+.style_input_file
+{
+  & input[type=file]
+  {
+    display: none;
+  }
+
+  & [data-file-name]
+  {
+    border: 1px solid #CACACA;
+    line-height: 27px;
+    font-size: 14px;
+    text-indent: 5px;
+    border-radius: 3px!important;
+    background: #FFFFFF;
+    font-weight: normal;
+    margin-right: 10px;
+    display: inline-block;
+    padding: 0 20px;
+
+    & + span
+    {
+      position: relative;
+      display: inline-block;
+      padding: 0 20px!important;
+      border: 1px solid #64AD8D;
+      -moz-border-radius: 3px !important;
+      -webkit-border-radius: 3px !important;
+      border-radius: 3px !important;
+      font-weight: bold;
+      color: #FFFFFF;
+      background: repeat-x 0 0 #75D2A9;
+      cursor: pointer;
+      font-size: 14px;
+      line-height: 25px;
+      -webkit-transition: background 0.3s ease;
+      -moz-transition: background 0.3s ease;
+      -ms-transition: background 0.3s ease;
+      -o-transition: background 0.3s ease;
+      transition: background 0.3s ease;
+
+      &:hover,
+      &:active
+      {
+        background: repeat-x 0 0 #64AD8D;
+      }
+    }
+  }
+}
+
+.style_input_file_multiple
+{
+  [data-upload-files]
+  {
+    position: relative;
+    display: inline-block;
+    padding: 0 20px!important;
+    border: 1px solid #64AD8D;
+    -moz-border-radius: 3px !important;
+    -webkit-border-radius: 3px !important;
+    border-radius: 3px !important;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: repeat-x 0 0 #75D2A9;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 25px;
+    -webkit-transition: background 0.3s ease;
+    -moz-transition: background 0.3s ease;
+    -ms-transition: background 0.3s ease;
+    -o-transition: background 0.3s ease;
+    transition: background 0.3s ease;
+
+    &:hover,
+    &:active
+    {
+      background: repeat-x 0 0 #64AD8D;
+    }
+  }
+
+  & input[type=file]
+  {
+    display: none;
+  }
+
+  & [data-file-name]
+  {
+    border: 1px solid #CACACA;
+    line-height: 27px;
+    font-size: 14px;
+    text-indent: 5px;
+    border-radius: 3px!important;
+    background: #FFFFFF;
+    font-weight: normal;
+    margin-right: 10px;
+    display: inline-block;
+    padding: 0 20px;
+  }
+
+  [data-list-files] > div
+  {
+    &.item_file
+    {
+      margin-top: 15px;
+      border: 1px solid #DDDDDD;
+      border-radius: 3px;
+      padding: 20px;
+    }
+  }
+}
+

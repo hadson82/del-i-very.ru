@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>lgcanonicalurls</name>
+	<displayName><![CDATA[Canonical URLs to Avoid Duplicate Content - SEO]]></displayName>
+	<version><![CDATA[1.0.15]]></version>
+	<description><![CDATA[Add canonical tags to your pages in order to avoid duplicate content and improve your SEO.]]></description>
+	<author><![CDATA[L&iacute;nea Gr&aacute;fica]]></author>
+	<tab><![CDATA[seo]]></tab>
+	<is_configurable>1</is_configurable>
+	<need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>

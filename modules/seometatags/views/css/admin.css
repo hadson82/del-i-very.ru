@@ -1,0 +1,152 @@
+@-webkit-keyframes spin_circle {
+    0%,
+    100% {
+        box-shadow: 15px 15px #4f4d49, -15px 15px #dfdfdf, -15px -15px #4f4d49, 15px -15px #dfdfdf;
+    }
+    25% {
+        box-shadow: -15px 15px #dfdfdf, -15px -15px #4f4d49, 15px -15px #dfdfdf, 15px 15px #4f4d49;
+    }
+    50% {
+        box-shadow: -15px -15px #4f4d49, 15px -15px #dfdfdf, 15px 15px #4f4d49, -15px 15px #dfdfdf;
+    }
+    75% {
+        box-shadow: 15px -15px #dfdfdf, 15px 15px #4f4d49, -15px 15px #dfdfdf, -15px -15px #4f4d49;
+    }
+}
+
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+}
+
+.bs-callout-info {
+    border-left-color: #1b809e;
+}
+
+.help_block ul
+{
+    list-style: none;
+    padding: 0;
+}
+
+.meta_vars
+{
+    padding: 10px;
+    clear: both;
+    border: 1px dashed #1C96C2;
+    border-radius: 6px;
+    background: #EAFFFF;
+    margin-bottom: 10px;
+}
+
+.margin-form #product_form_submit_btn,
+.margin-form #category_form_submit_btn
+{
+    cursor: pointer;
+    background: #e3e3e3 repeat-x scroll left top;
+    background: -moz-linear-gradient(center top , #F9F9F9, #E3E3E3) repeat scroll 0 0 transparent;
+    background: -webkit-gradient(linear, center top ,center bottom, from(#F9F9F9), to(#E3E3E3)) repeat scroll 0 0 transparent;
+    border-color: #CCCCCC #BBBBBB #A0A0A0;
+    border-left: 1px solid #BBBBBB;
+    border-radius: 3px 3px 3px 3px;
+    border-right: 1px solid #BBBBBB;
+    border-style: solid;
+    border-width: 1px;
+    color: #000000;
+    margin: 0;
+    outline: medium none;
+    padding: 3px 8px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-shadow: 0 1px 0 #fff;
+}
+.margin-form #product_form_submit_btn:hover,
+.margin-form #category_form_submit_btn:hover
+{
+    border: 1px solid #939393;
+}
+
+.defaultForm.loading
+{
+    position: relative;
+}
+
+.defaultForm.loading:before
+{
+    content: '';
+    display: block;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 110px;
+    right: 0;
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+    z-index: 9999;
+    box-shadow: 15px 15px #4f4d49, -15px 15px #dfdfdf, -15px -15px #4f4d49, 15px -15px #dfdfdf;
+    -webkit-animation: spin_circle ease infinite 4s;
+}
+.defaultForm.loading:after
+{
+    display: block;
+    content: '';
+    clear: both;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0, 0.3);
+    position: absolute;
+    z-index: 999;
+}
+
+
+.progress_bar
+{
+    height: 20px;
+    border-radius: 3px;
+    overflow: hidden;
+    background: #e8e8e8;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bolder;
+    position: absolute;
+    z-index: 9999;
+    width: 40%;
+    left: 0;
+    margin: 0 30%;
+    top: 180px;
+    display: none;
+}
+
+.loading .progress_bar
+{
+    display: block;
+}
+
+.progress_bar .progress_line
+{
+    background: #5aad3e;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    -webkit-transition: width 0.3s ease;
+    -moz-transition: width 0.3s ease;
+    -ms-transition: width 0.3s ease;
+    -o-transition: width 0.3s ease;
+    transition: width 0.3s ease;
+}
+
+.progress_bar .progress_percent
+{
+    position: relative;
+    z-index: 2;
+}

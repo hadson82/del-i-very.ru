@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEE,oBACA;EACE,aAAa,EAAE,kBAAkB;EACjC,aAAa,EAAE,IAAI;EACnB,cAAc,EAAE,IAAI;EAEpB,+BACA;IACE,aAAa,EAAE,CAAC;IAChB,aAAa,EAAE,CAAC;EAGlB,mCACA;IACE,MAAM,EAAE,MAAM",
+"sources": ["left.scss"],
+"names": [],
+"file": "left.css"
+}

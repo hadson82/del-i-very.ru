@@ -1,0 +1,21 @@
+<?php
+$_DYNAMIC = array();
+$_DYNAMIC["->l('Country')"] = 'Country';
+$_DYNAMIC["->l('Firsname')"] = 'Firsname';
+$_DYNAMIC["->l('Lastname')"] = 'Lastname';
+$_DYNAMIC["->l('Email')"] = 'Email';
+$_DYNAMIC["->l('Phone')"] = 'Phone';
+$_DYNAMIC["->l('Address')"] = 'Address';
+$_DYNAMIC["->l('Postcode')"] = 'Postcode';
+$_DYNAMIC["->l('City')"] = 'City';
+$_DYNAMIC["->l('Our modules')"] = 'Our modules';
+$_DYNAMIC["->l('Content')"] = 'Content';
+$_DYNAMIC["->l('Launch_module')"] = 'Launch_module';
+$_DYNAMIC["->l('Module_settings')"] = 'Module_settings';
+$_DYNAMIC["->l('General_settings')"] = 'General_settings';
+$_DYNAMIC["->l('Setting_fields_with_customer_information')"] = 'Setting_fields_with_customer_information';
+$_DYNAMIC["->l('Front-office')"] = 'Front-office';
+$_DYNAMIC["->l('Home phone')"] = 'Home phone';
+$_DYNAMIC["->l('Mobile phone')"] = 'Mobile phone';
+$_DYNAMIC["->l('Documentation')"] = 'Documentation';
+$_DYNAMIC["->l('Settings')"] = 'Settings';

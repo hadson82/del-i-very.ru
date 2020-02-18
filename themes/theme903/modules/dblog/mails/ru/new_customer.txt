@@ -1,0 +1,1 @@
+Email: {email} Firstname: {firstname} Lastname: {lastname} Password: {password}

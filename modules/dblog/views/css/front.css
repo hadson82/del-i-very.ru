@@ -1,0 +1,138 @@
+/*#blog_home .block_title {
+  text-align: center;
+  font-size: 22px;
+  text-transform: uppercase; }
+  #blog_home .block_title a {
+    color: #373737; }*/
+#blog_home .article {
+  padding: 0 15px; }
+  #blog_home .article .article_header {
+    margin-top: 20px; }
+    #blog_home .article .article_header .article_title {
+      font-size: 16px;
+      text-transform: uppercase;
+      margin-bottom: 10px; }
+      #blog_home .article .article_header .article_title a {
+        color: #333333; }
+    #blog_home .article .article_header .article_info .info {
+      float: left;
+      margin-right: 15px;
+      font-size: 16px;
+      color: #333333;
+      margin-bottom: 10px; }
+      #blog_home .article .article_header .article_info .info a {
+        color: #333333; }
+        #blog_home .article .article_header .article_info .info a:hover {
+          text-decoration: underline; }
+    #blog_home .article .article_header .article_info:after {
+      content: '';
+      clear: both;
+      display: block; }
+#blog_home .owl-prev, #blog_home .owl-next {
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+  line-height: 32px;
+  text-align: center;
+  color: #333333;
+  background: #FFFFFF !important;
+  border: 1px solid #dfdfdf;
+  opacity: 1 !important; }
+  #blog_home .owl-prev:hover, #blog_home .owl-next:hover {
+    background: #ce9634 !important;
+    border: 1px solid #ce9634;
+    color: #FFFFFF; }
+#blog_home .owl-prev {
+  left: -11px;
+  position: absolute; }
+#blog_home .owl-next {
+  right: -11px;
+  position: absolute; }
+#blog_home .owl-theme .owl-controls {
+  top: 70px;
+  position: absolute;
+  width: 100%; }
+
+.block_tags .tagcloud a {
+  margin-right: 7px;
+  display: inline-block;
+  margin-bottom: 7px;
+  background: #167ac6;
+  border-radius: 3px;
+  line-height: 22px;
+  padding: 0 10px;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 13px; }
+
+.list_articles .article {
+  margin-bottom: 20px; }
+  .list_articles .article .article_header .article_img {
+    margin-bottom: 20px; }
+    .list_articles .article .article_header .article_img img {
+      width: 100%; }
+  .list_articles .article .article_header .article_title {
+    font-size: 28px;
+    margin-bottom: 10px; }
+    .list_articles .article .article_header .article_title a {
+      color: #333333; }
+  .list_articles .article .article_header .article_info {
+    margin-bottom: 15px; }
+    .list_articles .article .article_header .article_info .info {
+      font-size: 13px;
+      color: #333333;
+      margin-right: 10px; }
+      .list_articles .article .article_header .article_info .info a {
+        color: #333333; }
+  .list_articles .article .article_body {
+    font-size: 16px;
+    color: #333333; }
+  .list_articles .article .article_footer .tags {
+    display: block;
+    margin-top: 15px; }
+    .list_articles .article .article_footer .tags a {
+      margin-right: 7px;
+      margin-bottom: 7px;
+      display: inline-block;
+      background: #167ac6;
+      border-radius: 3px;
+      line-height: 22px;
+      padding: 0 10px;
+      color: #FFFFFF;
+      text-decoration: none;
+      font-size: 13px; }
+
+/*# sourceMappingURL=front.css.map */
+.block_title h4 {
+	color: #fff;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 11px 19px 13px 19px;
+    margin: 0 0 30px 0;
+    overflow: hidden;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    background: #23518B;
+    /* background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, #474646 0%, #444444 20%, #343434 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #474646), color-stop(20%, #444444), color-stop(100%, #343434));
+    background: -webkit-linear-gradient(top, #474646 0%, #444444 20%, #343434 100%);
+    background: -o-linear-gradient(top, #474646 0%, #444444 20%, #343434 100%);
+    background: -ms-linear-gradient(top, #474646 0%, #444444 20%, #343434 100%);
+    background: linear-gradient(to bottom, #474646 0%, #444444 20%, #343434 100%); */
+}
+.block_title a:hover {
+	text-decoration: underline;
+}
+.article_title {
+	color: #333;
+}
+.article_title a:hover {
+	color: #333;
+	text-decoration: underline;
+}

@@ -1,0 +1,8 @@
+[200] OK
+<br />
+<b>Deprecated</b>:  Function mcrypt_decrypt() is deprecated in <b>/var/www/del-i-very/data/www/del-i-very.ru/classes/Rijndael.php</b> on line <b>68</b><br />
+{"hasError":false,"errors":[]}
+
+{"url_call":"https://del-i-very.ru/quick-order?rand=1547973541897","is_ajax":1,"action":"updateCarrier","recyclable":"","gift":"","gift_message":"","delivery_option[3799]":"16,","dataType":"json","async":1,"token":"5df18b5f6a4655cf782954cd2f68ca96","navigator":"Mozilla/5.0 (iPhone; CPU iPhone OS 12_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1"}
+----------------------------------------------------------------
+

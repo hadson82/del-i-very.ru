@@ -1,0 +1,29 @@
+@media (max-width: 991px) {
+    #submitOneClickCheckout,
+    #showOneClickCheckout {
+        max-width: none;
+        font-size: 13px;
+        padding: 8px;
+    }
+    .exclusive-block {
+        padding: 0;
+        display: inline-block;
+    }
+}
+.exclusive-block {
+    margin-bottom: 7px;
+    clear: both;
+    padding: 0;
+}
+.wrapper_quantity .incrementQuantity, .wrapper_quantity .decrementQuantity {
+    font-size: 14px;
+    line-height: 25px;
+    width: 28px;
+}
+.wrapper_quantity .incrementQuantity span, .wrapper_quantity .decrementQuantity span {
+    vertical-align: top;
+    padding: 0px 8px 0 7px;
+}
+.one_click_product_checkout .price_block {
+    width: 260px;
+}

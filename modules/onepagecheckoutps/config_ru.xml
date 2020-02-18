@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>onepagecheckoutps</name>
+	<displayName><![CDATA[One Page Checkout PrestaShop]]></displayName>
+	<version><![CDATA[2.1.6]]></version>
+	<description><![CDATA[Самый простой и быстрый способ увеличить продажи. ]]></description>
+	<author><![CDATA[PresTeamShop.com]]></author>
+	<tab><![CDATA[checkout]]></tab>
+	<confirmUninstall><![CDATA[Вы уверены, что Вы хотите удалить?]]></confirmUninstall>
+	<is_configurable>1</is_configurable>
+	<need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>

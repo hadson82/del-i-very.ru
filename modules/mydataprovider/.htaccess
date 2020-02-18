@@ -1,0 +1,60 @@
+# Protection by IP
+#allow from xxx.xxx.xxx.xxx
+#deny from all
+
+# Disable caching for our scripts directory for prevent wrong caching settings
+<FilesMatch "\.(php)$">
+  Header set Cache-Control "private, no-store, no-cache, must-revalidate, no-transform, max-age=0"
+  Header set Pragma "no-cache"
+</FilesMatch>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine off
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive off
+</IfModule>
+
+# Prevent directory listing
+Options -Indexes 
+
+# Prevent access to PHP logs and catalogloader_config.php
+<FilesMatch "^(.*\.(log|htaccess|htpassword)|catalogloader_config.php)$">
+  Order allow,deny
+  Deny from all
+  Satisfy All
+</FilesMatch>
+
+# fix for: client denied by server configuration
+<Files *.php>
+  Order Deny,Allow
+  Allow from all
+</Files>
+
+# Некоторые хостинги настроены с ограничением прав, из-за чего некоторые директивы вызывают 500 Internal Server Error, тогда могут помочь следующие действия
+# - директиву Options +FollowSymLinks заменить на Options +SymLinksIfOwnerMatch
+# - закомментировать параметр +ExecCGI
+# - закомментировать директиву -MultiViews
+# - закомментировать параметры AddHandler, php_value, php_flag - при комментировании этих параметров не работает настройка логгирования
+
+# enable PHP error logging
+php_flag log_errors on
+# log file must exist and have rights 666
+php_value error_log catalogloader_handler.errors.log
+
+# аналог кода PHP: error_reporting(E_ALL ^ E_DEPRECATED)
+# 1 E_ERROR | 4 E_PARSE | 16 E_CORE_ERROR | 64 E_COMPILE_ERROR | 256 E_USER_ERROR | 4096 E_RECOVERABLE_ERROR
+php_value error_reporting 4437
+
+# PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 14976 bytes) - не хватает памяти, как правило для imagecreatefromjpeg или imagecreatetruecolor
+# Нужно увеличить memory_limit в php.ini
+# Если хостинг не позволяет, можно попробовать увеличить тут
+# Примерный алгоритм рассчёта: 30 кб фото сжатое в формат jpg = 3 Мб ОЗУ для ресайза, т.е. в 100 раз больше, аналогично для фото 7,5 Мб нужно 750Мб ОЗУ на сервере
+#php_value memory_limit 256M
+
+# PHP Warning: Unknown: Input variables exceeded 10000. To increase the limit change max_input_vars in php.ini
+#php_value max_input_vars 20000
+
+# При ошибке "Время ожидания операции истекло" на медленных хостингах можно включить и увеличить этот параметр
+#php_value max_execution_time 60

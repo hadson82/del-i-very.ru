@@ -1,0 +1,203 @@
+/************************************* desktop menu************************************/
+#menu-trigger {
+	display: none;
+}
+#menu-wrap {
+	display:none;
+	border-radius:4px 4px 0 0;
+	background: #474646;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQ3NDY0NiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzNDM0MzQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #474646 0%, #343434 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#474646), color-stop(100%,#343434));
+	background: -webkit-linear-gradient(top,  #474646 0%,#343434 100%);
+	background: -o-linear-gradient(top,  #474646 0%,#343434 100%);
+	background: -ms-linear-gradient(top,  #474646 0%,#343434 100%);
+	background: linear-gradient(to bottom,  #474646 0%,#343434 100%);
+	position: relative;
+	z-index: 2;
+}
+#menu-custom, #menu-custom ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#menu-custom:before, #menu-custom:after {
+	display: table;
+	content: "";
+}
+#menu-custom:after {
+	clear: both;
+}
+#menu-custom {
+	zoom: 1;
+}
+.desktop #menu-custom li {
+	float: left;
+	position: relative;
+}
+.desktop #menu-custom > li:first-child > a {
+	padding-left: 20px;
+}
+.desktop #menu-custom a {
+	float: left;
+	padding: 10px 10px;
+	color: #fff;
+	text-transform: uppercase;
+	font: bold 23px/28px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+.desktop #menu-custom a:hover, .desktop #menu-custom > li:hover > a, .desktop #menu-custom > li.sfHoverForce > a {
+	color: #747474;
+}
+.desktop #menu-custom li li:hover > a {
+	color: #fff;
+	background-color: #747474;
+}
+.desktop #menu-custom ul {
+	display: none;
+	margin: 20px 0 0 0;
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	top: 48px;
+	left: 0;
+	z-index: 1;
+	background: #444;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+.desktop #menu-custom li:hover > ul {
+	display: block;
+	opacity: 1;
+	visibility: visible;
+	margin: 0;
+}
+.desktop #menu-custom ul ul {
+	top: 0;
+	left: 220px;
+	margin: 0 0 0 20px;
+}
+.desktop #menu-custom ul li {
+	display: block;
+	float: none;
+	border: 0;
+}
+.desktop #menu-custom ul a {
+	display: block;
+	float: none;
+	padding: 10px;
+	width: 220px;
+	white-space: nowrap;
+	text-transform: none;
+	font: normal 14px/16px Arial, Helvetica, sans-serif;
+}
+.desktop #menu-custom ul a:hover, .desktop #menu-custom ul li.sfHoverForce > a {
+	background-color: #747474;
+}
+#menu-trigger {
+	display: none;
+}
+.desctop #menu-custom {
+	display: block;
+}
+.desktop #menu-custom li.hasSub > a:before {
+	content:"";
+	font-family:"FontAwesome";
+	margin-left:5px;
+	float:right;	
+}
+.desktop #menu-custom li li.hasSub > a:before {
+	content:"";
+}
+/**************************************************mobile menu**************************************************************/
+@media only screen and (max-width:767px) {
+#menu-wrap.desktop {
+	display: none;
+}
+#menu-wrap {
+	position: relative;
+	display:block;
+}
+#menu-wrap * {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#menu-trigger {
+	height: 48px;
+	line-height: 48px;
+	cursor: pointer;
+	padding: 0 0 0 20px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 23px;
+}
+#menu-trigger .menu-icon {
+	display: block;
+	font-size: 30px;
+	line-height: 30px;
+	width: auto;
+	position: absolute;
+	top: 8px;
+	right: 14px;
+}
+.mobile #menu-custom {
+	display: none;
+	margin: 0;
+	padding: 0px;
+	position: absolute;
+	top: 48px;
+	left:0;
+	width: 100%;
+	z-index: 1;
+	background-color: #444;
+}
+#menu-custom ul.menu-mobile-2 {
+	display: none;
+}
+#menu-custom li {
+	display: block;
+	position: static;
+	position: relative;
+}
+#menu-custom a {
+	display: block;
+	float: none;
+	padding: 10px 20px;
+	color: #fff;
+	font-size: 18px;
+}
+#menu-custom a:hover {
+	background: #888;
+}
+#menu-custom ul a {
+	padding-left: 40px;
+	width: auto;
+}
+#menu-custom ul ul a {
+	padding-left: 60px;
+	width: auto;
+}
+.open-mobile-2 {
+	display: block;
+	font-size: 25px;
+	line-height: 30px;
+	position: absolute;
+	right: 13px;
+	top: 4px;
+	height: 30px;
+	width: 30px;
+	text-align: center;
+	vertical-align: middle;
+	color: #fff;
+}
+.open-mobile-2:hover {
+	cursor: pointer;
+}
+.open-mobile-2:hover + a {
+	background: #888888;
+}
+}

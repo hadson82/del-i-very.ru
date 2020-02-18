@@ -1,0 +1,20 @@
+.block_left
+{
+  & .article
+  {
+    border-bottom: 1px dashed #333333;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+
+    &:last-child
+    {
+      border-bottom: 0;
+      margin-bottom: 0;
+    }
+
+    & .article_image
+    {
+      margin: 15px 0;
+    }
+  }
+}

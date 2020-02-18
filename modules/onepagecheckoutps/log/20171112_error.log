@@ -1,0 +1,173 @@
+[500] Internal Server Error
+<style>
+				#psException{font-family: Verdana; font-size: 14px}
+				#psException h2{color: #F20000}
+				#psException p{padding-left: 20px}
+				#psException ul li{margin-bottom: 10px}
+				#psException a{font-size: 12px; color: #000000}
+				#psException .psTrace, #psException .psArgs{display: none}
+				#psException pre{border:1px solid #236B04; background-color:#EAFEE1; padding:5px; font-family:Courier;
+				width: 99%; overflow-x: auto; margin-bottom: 30px;}
+				#psException .psArgs pre{background-color: #F1FDFE;}
+				#psException pre .selected{color: #F20000; font-weight: bold;}
+			</style><div id="psException"><h2>[PrestaShopException]</h2><p><b>Property Address->city is not valid</b><br /><i>at line </i><b>909</b><i> in file </i><b>classes/ObjectModel.php</b></p><div class="psTrace" id="psTrace_" style="display: block"><pre>904.             }
+905. 
+906.             $message = $this-&gt;validateField($field, $this-&gt;$field);
+907.             if ($message !== true) {
+908.                 if ($die) {
+<span class="selected">909.                     throw new PrestaShopException($message);
+</span>910.                 }
+911.                 return $error_return ? $message : false;
+912.             }
+913.         }
+914. 
+</pre></div><ul><li><b>ObjectModelCore->validateFields</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_0').style.display =
+					(document.getElementById('psTrace_0').style.display != 'block') ? 'block' : 'none';
+					return false">[line 246 - classes/ObjectModel.php]</a><div class="psTrace" id="psTrace_0" ><pre>241.      * @return array All object fields
+242.      * @throws PrestaShopException
+243.      */
+244.     public function getFields()
+245.     {
+<span class="selected">246.         $this-&gt;validateFields();
+</span>247.         $fields = $this-&gt;formatFields(self::FORMAT_COMMON);
+248. 
+249.         // For retro compatibility
+250.         if (Shop::isTableAssociated($this-&gt;def['table'])) {
+251.             $fields = array_merge($fields, $this-&gt;getFieldsShop());
+</pre></div></li><li><b>ObjectModelCore->getFields</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_1').style.display =
+					(document.getElementById('psTrace_1').style.display != 'block') ? 'block' : 'none';
+					return false">[line 652 - classes/ObjectModel.php]</a><div class="psTrace" id="psTrace_1" ><pre>647. 
+648.         if (Shop::checkIdShopDefault($this-&gt;def['table']) &amp;&amp; !$this-&gt;id_shop_default) {
+649.             $this-&gt;id_shop_default = (in_array(Configuration::get('PS_SHOP_DEFAULT'), $id_shop_list) == true) ? Configuration::get('PS_SHOP_DEFAULT') : min($id_shop_list);
+650.         }
+651.         // Database update
+<span class="selected">652.         if (!$result = Db::getInstance()-&gt;update($this-&gt;def['table'], $this-&gt;getFields(), '`'.pSQL($this-&gt;def['primary']).'` = '.(int)$this-&gt;id, 0, $null_values)) {
+</span>653.             return false;
+654.         }
+655. 
+656.         // Database insertion for multishop fields related to the object
+657.         if (Shop::isTableAssociated($this-&gt;def['table'])) {
+</pre></div></li><li><b>ObjectModelCore->update</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_2').style.display =
+					(document.getElementById('psTrace_2').style.display != 'block') ? 'block' : 'none';
+					return false">[line 195 - classes/Address.php]</a> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+						onclick="document.getElementById('psArgs_2').style.display =
+						(document.getElementById('psArgs_2').style.display != 'block') ? 'block' : 'none';
+						return false">[1 Arguments]</a><div class="psTrace" id="psTrace_2" ><pre>190. 
+191.         if (Validate::isUnsignedId($this-&gt;id_customer)) {
+192.             Customer::resetAddressCache($this-&gt;id_customer, $this-&gt;id);
+193.         }
+194. 
+<span class="selected">195.         return parent::update($null_values);
+</span>196.     }
+197. 
+198.     /**
+199.      * @see ObjectModel::delete()
+200.      */
+</pre></div><div class="psArgs" id="psArgs_2"><pre><b>Argument [0]</b>
+
+</pre></li><li><b>AddressCore->update</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_3').style.display =
+					(document.getElementById('psTrace_3').style.display != 'block') ? 'block' : 'none';
+					return false">[line 445 - classes/ObjectModel.php]</a> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+						onclick="document.getElementById('psArgs_3').style.display =
+						(document.getElementById('psArgs_3').style.display != 'block') ? 'block' : 'none';
+						return false">[1 Arguments]</a><div class="psTrace" id="psTrace_3" ><pre>440.      * @return bool Insertion result
+441.      * @throws PrestaShopException
+442.      */
+443.     public function save($null_values = false, $auto_date = true)
+444.     {
+<span class="selected">445.         return (int)$this-&gt;id &gt; 0 ? $this-&gt;update($null_values) : $this-&gt;add($auto_date, $null_values);
+</span>446.     }
+447. 
+448.     /**
+449.      * Adds current object to the database
+450.      *
+</pre></div><div class="psArgs" id="psArgs_3"><pre><b>Argument [0]</b>
+
+</pre></li><li><b>ObjectModelCore->save</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_4').style.display =
+					(document.getElementById('psTrace_4').style.display != 'block') ? 'block' : 'none';
+					return false">[line 4402 - modules/onepagecheckoutps/onepagecheckoutps.php]</a><div class="psTrace" id="psTrace_4" ><pre>4397.                     }
+4398. 
+4399.                     $this-&gt;validateFieldsAddress($fields, $delivery_address);
+4400. 
+4401.                     if (!count($this-&gt;errors)) {
+<span class="selected">4402.                         if (!$delivery_address-&gt;save()) {
+</span>4403.                             $this-&gt;errors[] = $this-&gt;l('An error occurred while updating your delivery address.');
+4404.                         }
+4405. 
+4406.                         if (Validate::isLoadedObject($delivery_address)) {
+4407.                             //assign opc customer to cookie, customer and cart to calculare fine the prices of carriers
+</pre></div></li><li><b>OnePageCheckoutPS->loadCarrier</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_5').style.display =
+					(document.getElementById('psTrace_5').style.display != 'block') ? 'block' : 'none';
+					return false">[line 709 - override/controllers/front/OrderOpcController.php]</a><div class="psTrace" id="psTrace_5" ><pre>704.                         die('Invalid data type.');
+705.                 }
+706.             } elseif (method_exists($this-&gt;onepagecheckoutps, $action)) {
+707.                 switch ($data_type) {
+708.                     case 'html':
+<span class="selected">709.                         die($this-&gt;onepagecheckoutps-&gt;$action());
+</span>710.                     case 'json':
+711.                         $response = $this-&gt;onepagecheckoutps-&gt;jsonEncode($this-&gt;onepagecheckoutps-&gt;$action());
+712.                         die($response);
+713.                     default:
+714.                         die('Invalid data type.');
+</pre></div></li><li><b>OrderOpcController->postProcess</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_6').style.display =
+					(document.getElementById('psTrace_6').style.display != 'block') ? 'block' : 'none';
+					return false">[line 178 - classes/controller/Controller.php]</a><div class="psTrace" id="psTrace_6" ><pre>173.             if (!$this-&gt;content_only &amp;&amp; ($this-&gt;display_header || (isset($this-&gt;className) &amp;&amp; $this-&gt;className))) {
+174.                 $this-&gt;setMedia();
+175.             }
+176. 
+177.             // postProcess handles ajaxProcess
+<span class="selected">178.             $this-&gt;postProcess();
+</span>179. 
+180.             if (!empty($this-&gt;redirect_after)) {
+181.                 $this-&gt;redirect();
+182.             }
+183. 
+</pre></div></li><li><b>ControllerCore->run</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_7').style.display =
+					(document.getElementById('psTrace_7').style.display != 'block') ? 'block' : 'none';
+					return false">[line 335 - override/classes/Dispatcher.php]</a><div class="psTrace" id="psTrace_7" ><pre>330.         try
+331.         {
+332.             $controller = Controller::getController($controller_class);
+333.             if (isset($params_hook_action_dispatcher))
+334.                 Hook::exec('actionDispatcher', $params_hook_action_dispatcher);
+<span class="selected">335.             $controller-&gt;run();
+</span>336.             if ($this-&gt;_isPageCacheActive())
+337.             {
+338.                 PageCache::displayStats(false, $pre_display_html);
+339.             }
+340.         }
+</pre></div></li><li><b>Dispatcher->dispatch_16</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_8').style.display =
+					(document.getElementById('psTrace_8').style.display != 'block') ? 'block' : 'none';
+					return false">[line 107 - override/classes/Dispatcher.php]</a><div class="psTrace" id="psTrace_8" ><pre>102.     * date: 2017-09-01 19:08:31
+103.     * version: 4.08
+104.     */
+105.     public function dispatch() {
+106.         if (Tools::version_compare(_PS_VERSION_,'1.6','&gt;=')) {
+<span class="selected">107.             $this-&gt;dispatch_16();
+</span>108.         } else {
+109.             $this-&gt;dispatch_15();
+110.         }
+111.     }
+112.     /*
+</pre></div></li><li><b>Dispatcher->dispatch</b> - <a style="font-size: 12px; color: #000000; cursor:pointer; color: blue;"
+					onclick="document.getElementById('psTrace_9').style.display =
+					(document.getElementById('psTrace_9').style.display != 'block') ? 'block' : 'none';
+					return false">[line 28 - index.php]</a><div class="psTrace" id="psTrace_9" ><pre>23. *  @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+24. *  International Registered Trademark &amp; Property of PrestaShop SA
+25. */
+26. 
+27. require(dirname(__FILE__).'/config/config.inc.php');
+<span class="selected">28. Dispatcher::getInstance()-&gt;dispatch();
+</span></pre></div></li></ul></div>
+
+{"url_call":"https://del-i-very.ru/quick-order?rand=1510506667445","is_ajax":1,"action":"loadCarrier","dataType":"html","id_state":null,"city":"Каменск_уральский","id_address_delivery":null,"async":1,"token":"5df18b5f6a4655cf782954cd2f68ca96","navigator":"Mozilla/5.0 (Linux; Android 5.1; MZ-M3s Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.94 Mobile Safari/537.36"}
+----------------------------------------------------------------
+

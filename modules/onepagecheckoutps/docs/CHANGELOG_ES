@@ -1,0 +1,163 @@
+CHANGELOG (Historial de versiones)
+
+[ADD] = Adiciones de funcionalidades
+[MOD] = Modificaciones y actualizaciones
+[FIX] = Correccion de problemas o errores (Bugs)
+
+V2.0.0
+- Nueva version para PrestaShop 1.5 & 1.6
+
+V2.0.3
+- Mejoras, solucion a problemas y mayor compatibilidad.
+
+V2.0.4 (29/01/2015)
+- [FIX] Solucion a varios bugs reportados de la version 2.0.3.
+- [FIX] Autoselecciona el pais del cliente si se tiene la geo-localizacion activa en el PrestaShop.
+- [FIX] Problemas con ventana popup en algunas plantillas.
+- [FIX] Creacion de direcciones duplicadas.
+- [MOD] Mensaje de alerta a clientes que usen el navegador Internet Explorer 6, 7 y 8, puesto que no esta soportado en el modulo.
+- [MOD] Mayor compatibilidad con plantillas.
+- [MOD] Compatibilidad con version 3 de Correos.
+- [ADD] Compatibilidad con modulo de envio Kiala.
+- [ADD] Compatibilidad con modulo de pago lc_paywithfee.
+- [ADD] Compatibilidad con modulo de pago PaypalPro.
+- [ADD] Compatibilidad con modulo MegaProduct.
+- [ADD] Mostrar aviso a clientes que usen IE6, IE7 y IE8 para que usen una version actual u otro navegador.
+
+V2.0.5 (18/03/2015)
+- [ADD] Ahora es posible agregar campos adicionales para ser solicitados al momento de realizar el cliente un pedido (BETA).
+- [ADD] Al seleccionar un metodo de envio o pago, se marca con un borde para mejorar la visibilidad en dispositivos moviles.
+- [ADD] Compatibilidad con nuestro modulo Last Minute OPC.
+- [ADD] Compatibilidad con modulo PreOrderProducts de BelVG.
+- [ADD] Compatibilidad con modulo My Collection Places.
+- [MOD] Mayor compatibilidad con plantillas.
+- [FIX] Cuando se registraba direccion de envio y facturacion solo era registrada una direccion.
+- [FIX] En versiones PrestaShop 1.5 al aumentar o disminuir cantidades era duplicada o triplicada las acciones.
+- [FIX] No era eliminado el IVA de la compra cuando se ingresaba un VAT Number valido.
+- [FIX] Solucionado problema visual con idiomas RTL.
+- [FIX] Problemas responsive en el resumen de carrito.
+- [FIX] Al activar la opcion "Mostrar el resumen de carrito antes del checkout" no funciona el ingreso de cupones de descuento.
+- [FIX] Problemas visuales en el resumen de carrito sobre Chrome.
+
+V2.0.6 (02/06/2015)
+- [FIX] Solucion a varios problemas menores visuales en el resumen de carrito.
+- [FIX] Solucion de problemas sobre el navegador IE9.
+- [FIX] Duplica metodos de pago en la pestana "Pagos" cuando se tiene activo Multi-Tienda.
+- [FIX] No era posible cambiar la descipcion de los metodos de pago en la configuracion del modulo.
+- [FIX] La opcion "Mostrar listado de grupos de clientes" no funcionaba correctamente.
+- [FIX] Problema con varios formatos de fecha.
+- [MOD] Mayor compatibilidad con plantillas.
+- [MOD] Mejor implementacion de estandares de PrestaShop.
+- [ADD] Parte de la traduccion al Romano.
+- [ADD] Parte de la traduccion al Frances.
+- [ADD] Validar en linea el correo electronico ingresado si ya existe o no.
+- [ADD] Si el modulo "vatnumber" esta activo y tiene activa la validacion en linea del VAT number, ahora es validado desde el checkout.
+- [ADD] Compatibilidad con modulo de pago "triveneto".
+- [ADD] Implementacion de pequeno log de errores interno.
+
+V2.0.7 (15/07/2015)
+- [ADD] Opcion para hacer login por medio de Facebook y Google.
+- [ADD] Compatibilidad con modulo "rpgiftwrapping".
+- [ADD] Compatibilidad con modulo "attributewizarpro".
+- [MOD] Mejora visual en la configuracion del modulo. Ahora es totalmente Responsive su configuracion.
+- [MOD] Ahora verifica mucho mejor el NIF/NIE/CIF de Espana.
+- [MOD] Los campos tipo fecha ahora son mostrados segun el formato de cada idioma.
+- [MOD] Mayor compatibilidad con plantillas.
+- [FIX] Problema cuando los productos tenian asociados diferentes transportitas.
+- [FIX] Solucion a problema de compatibilidad con AuthorizeAIM.
+- [FIX] Al aumentar cantidades en los productos, ya no cambian de posiciones y evita confusiones al cliente.
+- [FIX] Compatibilidad con GeoLocalizacion de PrestaShop.
+- [FIX] No muestra el cargando al iniciar sesion desde Chrome.
+- [FIX] Si un pais no necesita codigo postal no es obligatorio colocarlo.
+- [FIX] Eran creadas direcciones vacias e innecesarias en los pedidos.
+
+V2.0.9 (14/09/2015)
+- [ADD] Traduccion al Aleman.
+- [ADD] Traduccion al Japones.
+- [ADD] Traduccion al Holandes.
+- [ADD] Traduccion al Ruso.
+- [ADD] Compatibilidad con metodo de pago "PaypalMX".
+- [ADD] Compatibilidad con metodo de pago "SequraPayment".
+- [ADD] Compatibilidad con metodo de envio "ChronoPost".
+- [ADD] Compatibilidad con modulo "Alex Delivery Day".
+- [ADD] Validacion de la longitud de caracteres en los campos del registro.
+- [MOD] Actualizacion al nuevo API de Facebook 2.4.
+- [MOD] Mejor implementacion de estandares de PrestaShop.
+- [FIX] Actualizacion de impuestos segun el pais para productos virtuales.
+- [FIX] Problema al cargar datos del cliente sobre IE.
+- [FIX] Era renombrado los alias de las direcciones.
+- [FIX] Si se daba clic atras al navegador despues de confirmar pedido, era mostrado un mensaje de Paypal erroneamente.
+- [FIX] No cargaba correctamente el API de Google Maps para autocompletar las direcciones si se tenia SSL activo.
+- [FIX] Al desactivar el auto-generar contrasena, no eran mostrados los campos para que el cliente ingresara una contrasena personalizada.
+- [FIX] Problema al modificar o crear campos del registro en la version de PrestaShop 1.6.1.
+
+V2.1.0 (18/10/2015)
+- [ADD] Compatibilidad con metodo de pago "RealexRedirect".
+- [ADD] Compatibilidad con metodo de pago "PaypalPlus".
+- [ADD] Compatibilidad con metodo de pago "SveawebPay".
+- [ADD] Compatibilidad con metodo de pago "UniversalPay".
+- [MOD] Mejora para soportar mas metodos de pagos.
+- [MOD] Re uso de direcciones creadas automaticamente.
+- [FIX] Solucion a problema de validacion de campos tipo Fecha en Chrome.
+
+V2.1.2 (18/11/2015)
+- [ADD] Opcion de forzar la visualizacion de metodos de pago, para aquellos que no son mostrados en el checkout por alguna razon de incompatibilidad.
+- [ADD] Nueva funcionalidad para hacer traducciones al modulo desde su configuracion. Tambien posibilidad de descargar traduccion como respaldo.
+- [ADD] Zona de preguntas frecuentes (FAQ) dentro del modulo.
+- [ADD] Nuevas opciones para personalizar colores del checkout.
+- [ADD] Los botones de continuar y comprar, ahora son flotantes siempre y cuando no sean visibles, esto mejora la usabilidad sobre moviles.
+- [ADD] Compatibilidad con modulo "SyMinimalPurchase".
+- [MOD] Correcciones aplicadas del validador de prestashop.
+- [MOD] Ahora las Politicas de Privacidad se muestran abajo de la informacion del cliente.
+- [MOD] Mayor compatibilidad con metodos de pago.
+- [FIX] Al instalar nuevos idiomas las traducciones de los campos del registro quedaban en blanco en el FrontOffice.
+- [FIX] En ocasiones eran mezcladas las direcciones entre clientes.
+- [FIX] No cargaba el autocompletar de google maps.
+- [FIX] En productos virtuales no eran cargadas las provincias.
+- [FIX] No validaba correctamente el formato de las fechas.
+
+V2.1.3 (19/11/2015)
+- [ADD] Compatibilidad con metodo de pago "itaushopline".
+- [ADD] Compatibilidad con metodo de pago "pronesis_bancasella".
+- [ADD] Nueva funcionalidad para sobre-escribir codigo javascript o css, sin necesidad de ir directamente a los ficheros.
+- [FIX] Problema al cambiar los textos de los metodos de pago.
+
+V2.1.4 (04/01/2016)
+- [ADD] Compatibilidad con metodo de pago "mollie".
+- [ADD] Compatibilidad con metodo de pago "pi_cashondelivery".
+- [ADD] Compatibilidad con metodo de pago "paypalwithfee".
+- [ADD] Compatibilidad con modulo "minimumpurchasebycg".
+- [ADD] Pre-selecciona la direccion de envio y facturacion usada en el ultimo pedido.
+- [MOD] Mejoras para el validador de PrestaShop.
+- [MOD] Actualizacion de la documentacion.
+- [MOD] Mejora visual al mensaje de la cantidad restante para el envio gratuito.
+- [MOD] Mejora de compatibilidad con modulo "Custom Field".
+- [MOD] Mejoras visuales en general del modulo.
+- [FIX] Al registrarse por medio de las redes sociales, se estaba asignando mal la contrasena creada automaticamente.
+- [FIX] No cambiaba de color algunos textos o botones.
+
+V2.1.5 (22/02/2016)
+- [ADD] Compatibilidad con metodo de pago "Sequra Payment".
+- [ADD] Compatibilidad con metodo de pago "Braintree JS".
+- [ADD] Compatibilidad con metodo de pago "Paypal MX".
+- [ADD] Compatibilidad con metodo de pago "Sveawebpay".
+- [ADD] Compatibilidad con metodo de pago "Yadpay".
+- [ADD] Opcion de configurar un metodo de pago por defecto.
+- [ADD] Opcion para mostrar la imagen de producto con zoom sobre el resumen del carrito.
+- [ADD] Opcion para mostrar la disponibilidad del producto sobre el resumen del carrito.
+- [MOD] Mayor compatibilidad con mas metodos de pagos y plantillas.
+- [MOD] Actualizacion en la compatibilidad con metodo de pago "Stripe JS".
+- [FIX] En algunas ocasiones era mostrada una pagina en blanco y era necesario vaciar la cache de prestashop.
+- [FIX] Muestra textos en ingles cuando no existe un idioma configurado en el modulo.
+- [FIX] Problema al editar varios campos del registro, el popup no era limpiado correctamente.
+- [FIX] Problema con validar formatos de fechas.
+
+V2.1.6 (12/03/2016)
+- [ADD] Compatibilidad con metodo de pago "CodFee" de "IdNovate".
+- [ADD] Compatibilidad con metodo de pago "QuickPay".
+- [ADD] Compatibilidad con modulo "recargoequivalencia".
+- [ADD] Compatibilidad con modulo "freeshipping".
+- [MOD] Permite realizar pedidos si el cliente ya esta registrado, pero debe estar activo el Guest Checkout.
+- [MOD] Ahora permite sobre-escribir los TPL sobre la plantilla.
+- [FIX] Al ejecutar el fichero clean_garbage.php generaba un bug.
+- [FIX] Correccion a advertencias al tener un descuento mayor al total del carrito.

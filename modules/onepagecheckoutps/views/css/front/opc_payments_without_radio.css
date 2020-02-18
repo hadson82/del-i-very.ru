@@ -1,0 +1,50 @@
+/**
+ * We offer the best and most useful modules PrestaShop and modifications for your online store. 
+ *
+ * We are experts and professionals in PrestaShop
+ *
+ * @category  PrestaShop
+ * @category  Module
+ * @author    PresTeamShop.com <support@presteamshop.com> 
+ * @copyright 2011-2016 PresTeamShop
+ * @license   see file: LICENSE.txt
+ */
+
+/*div#onepagecheckoutps #onepagecheckoutps_step_review_container,
+div#onepagecheckoutps #onepagecheckoutps_step_three_container,
+div#onepagecheckoutps #onepagecheckoutps_step_review_container{
+    width: 65% !important;
+}
+
+div#onepagecheckoutps_step_three #payment_method_container .row{
+    margin: 0;
+}
+
+div#onepagecheckoutps_step_three #payment_method_container .col-md-6{
+    width: 98%;
+    padding: 0;
+}
+
+div#onepagecheckoutps_step_three #payment_method_container > div{
+    margin-bottom: 2%;
+}
+
+div#onepagecheckoutps_step_review #buttons_checkout{
+    display: none !important;
+}
+
+div#onepagecheckoutps #onepagecheckoutps_step_three_container{
+    border-left: none !important;
+    float: right;
+    padding-right: 1%;
+    padding-left: 0;
+}
+
+div#onepagecheckoutps #onepagecheckoutps_step_three_container,
+div#onepagecheckoutps #onepagecheckoutps_step_review_container{
+    margin-top: 1%;
+}
+
+div#onepagecheckoutps #onepagecheckoutps_step_review_container{
+    padding-right: 0;
+}*/

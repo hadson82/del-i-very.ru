@@ -1,0 +1,148 @@
+#pts-carousel {
+  /*background: #3399cc;*/
+  margin: 0 auto;
+}
+#pts-carousel img {
+  max-width: 100%;
+  /*width: 50%;*/
+}
+#pts-carousel a {
+  -webkit-transition: all 150ms ease;
+  -moz-transition: all 150ms ease;
+  -ms-transition: all 150ms ease;
+  -o-transition: all 150ms ease;
+  transition: all 150ms ease;
+}
+#pts-carousel a:hover {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  opacity: 0.6;
+  text-decoration: none;
+}
+#pts-carousel .container-fluid {
+  background: #FFFFFF;
+  margin: 40px auto 10px;
+  padding: 20px 40px 0;
+  max-width: 960px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+#pts-carousel .page-header {
+  background: #f9f9f9;
+  margin: -30px -40px 40px;
+  padding: 20px 40px;
+  border-top: 4px solid #ccc;
+  color: #999;
+  text-transform: uppercase;
+}
+#pts-carousel .page-header h3 {
+  line-height: 0.88rem;
+  color: #000;
+}
+#pts-carousel .caption h4 {
+  font-size: 1rem;
+  color: #444;
+}
+#pts-carousel .caption p {
+  font-size: 0.75rem;
+  color: #999;
+}
+#pts-carousel .btn.btn-mini {
+  font-size: 0.63rem;
+}
+#pts-carousel .control-box {
+  text-align: right;
+  width: 100%;
+}
+
+.pts-carousel.control-box .carousel-control,
+#pts-carousel .carousel-control {
+  background: #666;
+  border: 0px;
+  border-radius: 0px;
+  display: inline-block;
+  font-size: 34px;
+  font-weight: 200;
+  line-height: 18px;
+  opacity: 0.5;
+  padding: 4px 10px 0px;
+  position: static;
+  height: 30px;
+  width: 15px;
+}
+#pts-carousel .footer {
+  margin: auto;
+  width: 100%;
+  max-width: 960px;
+  display: block;
+  font-size: 0.69rem;
+}
+#pts-carousel .footer,
+#pts-carousel .footer a {
+  color: #c9e4f7;
+}
+#pts-carousel p.right {
+  float: right;
+}
+
+#pts-carousel ::selection {
+  background: #ff5e99;
+  color: #FFFFFF;
+  text-shadow: 0;
+}
+#pts-carousel ::-moz-selection {
+  background: #ff5e99;
+  color: #FFFFFF;
+}
+#pts-carousel a,
+#pts-carousel a:focus,
+#pts-carousel a:active,
+#pts-carousel a:hover,
+#pts-carousel object,
+#pts-carousel embed {
+  outline: none;
+}
+#pts-carousel :-moz-any-link:focus {
+  outline: none;
+}
+#pts-carousel input::-moz-focus-inner {
+  border: 0;
+}
+
+#pts-carousel div div.item a,
+#pts-carousel div.caption {
+    text-align: center !important;
+}
+
+#pts-carousel div.caption p {
+    /*text-align: left !important;*/
+    padding: 0 15px;
+}
+#pts-carousel div.caption a.btn {
+    display: none;
+}
+#pts-carousel img.pts-carousel-image {
+    margin-top: 15px;
+    padding: 0 15px;
+}
+
+#pts-carousel ul.thumbnails div.thumbnail {
+    border: none !important;
+}
+
+#pts-carousel ul.thumbnails {
+    list-style-type: none !important;
+}
+
+.carousel-control {
+    padding-right: 20px !important;
+}
+
+/*#pts_carousel_modules .panel-body,
+#pts_carousel_modules #pts-carousel {
+    padding: 0 !important;
+}*/
+
+.pts-carousel.control-box .carousel-control {
+    position: relative;
+    margin-right: 10px;
+}

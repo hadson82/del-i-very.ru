@@ -1,0 +1,86 @@
+#view_article .article_header .article_preview img {
+  width: 100%;
+  }
+#view_article .article_header .article_title {
+  font-size: 30px;
+  color: #000;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+  line-height: 1.3em;
+  background: none;
+ }
+ #view_article h1{
+   padding: 0 0 0 0;
+   text-transform: none;
+ }
+ #view_article h2{
+  margin-top: 60px;
+}
+#view_article figure{
+  font-size: 14px;
+  margin-bottom: 60px;
+}
+
+#view_article .article_content {
+  color: #333333;
+  font-size: 16px;
+  line-height: 24px; }
+  #view_article .article_content p {
+    margin-bottom: 20px; }
+  #view_article .article_content ul, #view_article .article_content ol {
+    margin-left: 30px;
+    margin-bottom: 20px;
+    list-style: circle; }
+#view_article .article_footer .row_info {
+  background: #FAFAFA;
+  padding: 10px 20px; }
+  #view_article .article_footer .row_info:after {
+    content: '';
+    clear: both;
+    display: block; }
+  #view_article .article_footer .row_info .addthisshare {
+    float: right;
+    display: inline-block;
+    margin-left: 20px; }
+    #view_article .article_footer .row_info .addthisshare a {
+      display: inline-block; }
+      #view_article .article_footer .row_info .addthisshare a img {
+        width: 30px;
+        border-radius: 30px; }
+  #view_article .article_footer .row_info .info {
+    line-height: 30px;
+    margin-right: 10px;
+    font-size: 14px;
+    color: #333333; }
+    #view_article .article_footer .row_info .info a {
+      color: #333333; }
+#view_article .article_footer .row_tags .tags {
+  display: block;
+  margin-top: 20px; }
+  #view_article .article_footer .row_tags .tags a {
+    margin-right: 7px;
+    margin-bottom: 7px;
+    display: inline-block;
+    background: #167ac6;
+    border-radius: 3px;
+    line-height: 22px;
+    padding: 0 10px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 13px; }
+#view_article .article_products {
+  margin: 20px 0;
+  border-top: 1px solid #6F6F6F;
+  border-bottom: 1px solid #6F6F6F;
+  padding: 20px 15px;
+  background: #FAFAFA; }
+  #view_article .article_products ul li {
+    text-align: center;
+    padding-bottom: 15px; }
+    #view_article .article_products ul li .product_img_link {
+      display: block; }
+      #view_article .article_products ul li .product_img_link img {
+        display: inline-block; }
+
+/*# sourceMappingURL=front_article.css.map */

@@ -1,0 +1,11 @@
+.block_left .article {
+  border-bottom: 1px dashed #333333;
+  margin-bottom: 15px;
+  padding-bottom: 15px; }
+  .block_left .article:last-child {
+    border-bottom: 0;
+    margin-bottom: 0; }
+  .block_left .article .article_image {
+    margin: 15px 0; }
+
+/*# sourceMappingURL=left.css.map */

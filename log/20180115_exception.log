@@ -1,0 +1,12 @@
+*ERROR* 	2018/01/15 - 14:35:29: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 4<br /><br /><pre>SELECT o.id_order
+        FROM ps_orders o
+        LEFT JOIN ps_order_detail od ON (od.id_order = o.id_order)
+        WHERE o.valid = 1 AND od.product_id IN ()</pre> at line 791 in file classes/db/Db.php
+*ERROR* 	2018/01/15 - 14:43:02: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 4<br /><br /><pre>SELECT o.id_order
+        FROM ps_orders o
+        LEFT JOIN ps_order_detail od ON (od.id_order = o.id_order)
+        WHERE o.valid = 1 AND od.product_id IN ()</pre> at line 791 in file classes/db/Db.php
+*ERROR* 	2018/01/15 - 14:43:08: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 4<br /><br /><pre>SELECT o.id_order
+        FROM ps_orders o
+        LEFT JOIN ps_order_detail od ON (od.id_order = o.id_order)
+        WHERE o.valid = 1 AND od.product_id IN ()</pre> at line 791 in file classes/db/Db.php

@@ -1,0 +1,139 @@
+#view_article
+{
+  & .article_header
+  {
+    & .article_preview
+    {
+      & img
+      {
+        width: 100%;
+      }
+    }
+
+    & .article_title
+    {
+      font-size: 30px;
+      color: #fff;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+  }
+
+  & .article_content
+  {
+    color: #333333;
+    font-size: 16px;
+    line-height: 24px;
+
+    & p {
+      margin-bottom: 20px;
+    }
+
+    & ul,
+    & ol
+    {
+      margin-left: 30px;
+      margin-bottom: 20px;
+      list-style: circle;
+    }
+  }
+
+  & .article_footer
+  {
+    & .row_info
+    {
+      background: #FAFAFA;
+      padding: 10px 20px;
+
+      &:after
+      {
+        content: '';
+        clear: both;
+        display: block;
+      }
+
+      & .addthisshare
+      {
+        float: right;
+        display: inline-block;
+        margin-left: 20px;
+
+        & a
+        {
+          display: inline-block;
+
+          & img
+          {
+            width: 30px;
+            border-radius: 30px;
+          }
+        }
+      }
+
+      & .info
+      {
+        line-height: 30px;
+        margin-right: 10px;
+        font-size: 14px;
+        color: #333333;
+
+        & a
+        {
+          color: #333333;
+        }
+      }
+    }
+
+    & .row_tags
+    {
+      .tags
+      {
+        display: block;
+        margin-top: 20px;
+
+        & a
+        {
+          margin-right: 7px;
+          margin-bottom: 7px;
+          display: inline-block;
+          background: #167ac6;
+          border-radius: 3px;
+          line-height: 22px;
+          padding: 0 10px;
+          color: #FFFFFF;
+          text-decoration: none;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+
+  & .article_products
+  {
+    margin: 20px 0;
+    border-top: 1px solid #6F6F6F;
+    border-bottom: 1px solid #6F6F6F;
+    padding: 20px 15px;
+    background: #FAFAFA;
+
+    & ul
+    {
+      & li
+      {
+        text-align: center;
+        padding-bottom: 15px;
+
+        & .product_img_link
+        {
+          display: block;
+
+          & img
+          {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}
